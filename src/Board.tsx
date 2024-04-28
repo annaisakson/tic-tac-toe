@@ -74,6 +74,7 @@ const Board = () => {
 
   return (
     <>
+      <h1>Tic Tac Toe</h1>
       <div className="board">
         <div className="board-row">
           <Square value={squares[0]} handleClick={() => handleClick(0)} />
