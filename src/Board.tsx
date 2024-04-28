@@ -65,12 +65,10 @@ const Board = () => {
   }
 
   // function to handle restart
-  const handleRestart = (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
-    // Reset the squares to an array filled with empty strings
+  const handleRestart: React.MouseEventHandler<HTMLButtonElement> = () => {
+    // reset the squares to an array filled with empty strings
     setSquares(Array(9).fill(""));
-    // Reset to ensure the first player to move will be "X"
+    // reset to ensure the first player to move will be "X"
     setXIsNext(true);
   };
 
